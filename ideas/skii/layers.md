@@ -8,6 +8,10 @@
       - Eye Colour
       - Eyebrow
         - Eyebrow Colour
+    - Glasses
+      - Shape
+      - Colour
+        - Transparency
     - Hair
       - Hair Style
       - Hair Colour
