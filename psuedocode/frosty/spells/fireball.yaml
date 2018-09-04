@@ -25,8 +25,7 @@ speed: slow
   value: 0.5
   values:
     - inherit
-    - rejects:
-      speed
+    - rejects: Speed
       
 
 # -- A spell that shoots a fireball that travels slowly --
