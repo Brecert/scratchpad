@@ -1,0 +1,35 @@
+spell: root
+  display_name: root
+  value: root
+  values:
+    - inherit
+    - accepts:
+      all
+
+projectile: fireball
+  display_name: Projectile Fireball
+  value: FIREBALL
+  values:
+    - inherit
+    - speed: 1
+      accepts: Speed
+      
+    - damage: 8
+      accepts: Damaging
+      
+    - exposion_radius: default
+      accepts: Size
+  
+speed: slow
+  display_name: Speed Slow
+  value: 0.5
+  values:
+    - inherit
+    - rejects:
+      speed
+      
+
+# -- A spell that shoots a fireball that travels slowly --
+# spell ->
+#  projectile::fireball ->
+#    speed::slow
