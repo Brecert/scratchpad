@@ -77,6 +77,15 @@ x = y
 ```
 
 <details>
+  <summary> <b> Paths </b> </summary>
+  
+  Paths allows for easy assignment of specialized scoreboard criterias 
+  Usually when assigning an objective dummy will automatically be used.
+  However with paths you can use criterias
+  
+</details>
+
+<details>
   <summary> <b> Math </b> </summary>
 
 ##### Inefficient but safer
