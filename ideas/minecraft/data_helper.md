@@ -2,13 +2,11 @@
 
 A language to help make datapacks with a more readable and conventional syntax.
 
-## Examples
+## Core Concepts
 
-### Core Concepts
-
----
 <details>
   <summary> <b> Namespaces </b> </summary>
+  
 Everything in Data is in a namespace, even if it may not seem like it.
 
 ```cr
