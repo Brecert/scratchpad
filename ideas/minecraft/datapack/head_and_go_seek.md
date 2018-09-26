@@ -1,11 +1,11 @@
 Head and go seek
-----------------
+================
 (name to be determined)
 
 Hide your head and have others find it within a time limit.
 
 Rules
-=====
+-----
 The rules are simple as the datapack will handle all of that for the
 player.
 
@@ -14,7 +14,7 @@ player.
     head (and other factors)
 
 Overview
-========
+--------
 when a player agrees to hide a head a scorboard objective will be
 assigned to track the time.
 
