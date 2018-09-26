@@ -29,5 +29,5 @@ no_default_assignment = Objective.new "dummy"
 
 default_assignment = Objective.new "dummy", default: 0
 
-special_assignment = Objective.new Path.new("minecraft:play_one_minute)
+special_assignment = Objective.new Path.new("minecraft:play_one_minute")
 ```
