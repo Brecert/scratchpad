@@ -86,6 +86,7 @@ x = x + 1
 ```cr
 x = 1 + 2
 y = x + 3
+
 # becomes =>
 # scoreboard players set @s ___ 1
 # scoreboard players add @s ___ 2
