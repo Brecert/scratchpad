@@ -22,13 +22,16 @@ assigned to track the time.
 {namespace}.head.time = minecraft::stat::played_one_minute
 ```
 
+if placing the head takes more then a minute place the head where the
+place is (if criteria met)
+
 when the player finishes hiding it a scoreboard objective will be
 assigned.
 
 ```cr
 {namespace}.head.pos = player.pos
 
-{namespace}.head.time = {namespace}.head.MAX - {namespace}.head.
+{namespace}.head.time = {namespace}.head.MAX - {namespace}.head.time
 ```
 
 Then any other play can attempt to find the head.
