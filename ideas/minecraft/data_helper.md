@@ -53,17 +53,11 @@ s = minecraft::stat::played_one_minute
 
 can be broken down into
 
-`y = 2`
+`y = 2` => `variable assigment value`
 
-`variable assigment value`
+`x = y` => `variable assignment variable`
 
-`x = y`
-
-`variable assignment variable`
-
-`s = minecraft::stat::played_one_minute`
-
-`variable assignment path(minecraft, stat, played_one_minute)`
+`s = minecraft::stat::played_one_minute` => `variable assignment path(minecraft, stat, played_one_minute)`
 
 this is how the transpiler determines the correct assignment command
 
