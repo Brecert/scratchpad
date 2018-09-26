@@ -70,3 +70,50 @@ x = y
 # scoreboard players set @s y 2
 # scoreboard players operation @s = @s y
 ```
+
+#### Math
+##### Inefficient but safer
+```cr
+x = 0
+x = x + 1
+
+# becomes =>
+# scoreboard players set @s x 0
+# scoreboard players operation @s ___ = @s x
+# scoreboard players add @s ___ 1
+# scoreboard players operation @s x = ___
+```
+```cr
+x = 1 + 2
+y = x + 3
+# becomes =>
+# scoreboard players set @s ___ 1
+# scoreboard players add @s ___ 2
+# scoreboard players operation @s x = @s ___
+# scoreboard players operation @s ___ = @s x
+# scoreboard players add @s ___ 3
+# scoreboard players operation @s y = @s ___
+```
+
+##### Fast but less safe (chains may not work and it may mutate when not intended or expected).
+```cr
+x = 0
+x += 1
+
+# becomes =>
+# scoreboard players set @s x 0
+# scoreboard players add @s x 1
+```
+
+```cr
+x += 1
+x += 2
+y = x
+y += 3
+
+# becomes =>
+# scoreboard players add @s x 1
+# scoreboard players add @s x 2
+# scoreboard players operation @s y = @s x
+# scoreboard players add @s y 3
+```
