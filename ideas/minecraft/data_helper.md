@@ -80,8 +80,27 @@ x = y
   <summary> <b> Paths </b> </summary>
   
   Paths allows for easy assignment of specialized scoreboard criterias 
+  
   Usually when assigning an objective dummy will automatically be used.
-  However with paths you can use criterias
+  
+  However with paths you can use custom criterias.
+  
+  ```cr
+  x = :: dummy
+  # => scoreboard objectives add x dummy
+  
+  y = :: minecraft.custom:minecraft.play_one_minute
+  # => scoreboard objectives minecraft.custom:minecraft.play_one_minute
+  ```
+  
+  and when applicable shortcuts added
+  
+  ```cr
+  y = :: minecraft::play_one_minute
+  # => scoreboard objectives minecraft.custom:minecraft.play_one_minute
+  ```
+  
+  please note that the `::` syntax is not final.
   
 </details>
 
