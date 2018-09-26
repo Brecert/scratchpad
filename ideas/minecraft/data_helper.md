@@ -48,6 +48,7 @@ By default there aren't any conventional types, however there are invisible type
 ```cr
 y = 2
 x = y
+s = minecraft::stat::played_one_minute
 ```
 
 can be broken down into
@@ -59,6 +60,10 @@ can be broken down into
 `x = y`
 
 `variable assignment variable`
+
+`s = minecraft::stat::played_one_minute`
+
+`variable assignment path(minecraft, stat, played_one_minute)`
 
 this is how the transpiler determines the correct assignment command
 
