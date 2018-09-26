@@ -41,6 +41,27 @@ end
 # scoreboard players set server name.x 2
 ```
 
+#### Typings
+
+By default there aren't any conventional types, however there are invisible types
+
+```cr
+y = 2
+x = y
+```
+
+can be broken down into
+
+`y = 2`
+
+`variable assigment value`
+
+`x = y`
+
+`variable assignment variable`
+
+this is how the transpiler determines the correct assignment command
+
 #### Assigning
 ```cr
 y = 2
