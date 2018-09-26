@@ -89,17 +89,17 @@ x = y
   x = :: dummy
   # => scoreboard objectives add x dummy
   
-  y = :: minecraft.custom:minecraft.play_one_minute
+  y = :: minecraft.custom : minecraft.play_one_minute
   # => scoreboard objectives minecraft.custom:minecraft.play_one_minute
   ```
   
   and when applicable shortcuts added
   
   ```cr
-  y = :: minecraft::play_one_minute
+  y = :: minecraft : play_one_minute
   # => scoreboard objectives minecraft.custom:minecraft.play_one_minute
   ```
-  
+
   please note that the `::` syntax is not final.
   
 </details>
