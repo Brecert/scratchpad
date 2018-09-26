@@ -9,6 +9,7 @@ module: better_movement
 
 set sprint_time : sprint_one_cm
 set player_is_sprinting : dummy
+set last_sprint_time : dummy
 
 /*
 # to_bool is a macro that converts any number over 1 to 1
@@ -22,8 +23,8 @@ if player_is_sprinting
   sprint_time = last_sprint_time
   last_sprint_time = 0
   
-  if sprint_time > 20 
-    effect @s speed
+  if sprint_time > 19 
+    effect @s speed 0 1
 else
   last_sprint_time = sprint_time
   sprint_time = 0
