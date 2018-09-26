@@ -1,13 +1,14 @@
-Data Helper
-===========
+# Data Helper
+
 A language to help make datapacks with a more readable and conventional syntax.
 
-Examples
---------
+## Examples
+
 ### Core Concepts
 
-#### Namespaces
-
+---
+<details>
+  <summary> <b> Namespaces </b> </summary>
 Everything in Data is in a namespace, even if it may not seem like it.
 
 ```cr
@@ -40,9 +41,11 @@ end
 # becomes =>
 # scoreboard players set server name.x 2
 ```
+</details>
 
-#### Typings
-
+<details>
+  <summary> <b> Typings </b> </summary>
+  
 By default there aren't any conventional types, however there are invisible types
 
 ```cr
@@ -61,7 +64,11 @@ can be broken down into
 
 this is how the transpiler determines the correct assignment command
 
-#### Assigning
+</details>
+
+<details>
+  <summary> <b> Assignments </b> </summary>
+
 ```cr
 y = 2
 x = y
@@ -71,7 +78,9 @@ x = y
 # scoreboard players operation @s = @s y
 ```
 
-#### Math
+<details>
+  <summary> <b> Math </b> </summary>
+
 ##### Inefficient but safer
 ```cr
 x = 0
@@ -118,3 +127,5 @@ y += 3
 # scoreboard players operation @s y = @s x
 # scoreboard players add @s y 3
 ```
+</details>
+</details>
