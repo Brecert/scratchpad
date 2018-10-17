@@ -34,7 +34,6 @@
 ```
 
 ### Connection Example
-```
 On a join page
 
 Join page contacts server, server generates a temporary token for joining
@@ -42,7 +41,8 @@ Join page contacts server, server generates a temporary token for joining
 If join token is sent to the server from the User ID then generate a serverside Token for the User ID
 
 the client config for storing will be like so
-```json
+
+```
 {
   "dicent": {
     "address": "https://dicent.com",
@@ -52,7 +52,7 @@ the client config for storing will be like so
 ```
 
 On any subsequent connection the address is pinged and a token is sent in an attempt to log in (or something like that)
-```
+
 
 
 
