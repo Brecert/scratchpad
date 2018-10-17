@@ -42,14 +42,14 @@ Join page contacts server, server generates a temporary token for joining
 If join token is sent to the server from the User ID then generate a serverside Token for the User ID
 
 the client config for storing will be like so
-\```json
+```json
 {
   "dicent": {
     "address": "https://dicent.com",
     "token": "AKmDO3m.O093kkme0M"
   }
 }
-\```
+```
 
 On any subsequent connection the address is pinged and a token is sent in an attempt to log in (or something like that)
 ```
