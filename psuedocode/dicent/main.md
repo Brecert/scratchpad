@@ -53,8 +53,9 @@ the client config for storing will be like so
 
 On any subsequent connection the address is pinged and a token is sent in an attempt to log in (or something like that)
 
-
-
+The server recieved the ping and sends an alive ping back.
+After that the server will be temporarily expecting a token to be sent at an expected address (or something)
+if the tokens match up then the server will begin sending data to the client (or something)
 
 
 
