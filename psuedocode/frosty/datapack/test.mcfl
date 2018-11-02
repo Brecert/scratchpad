@@ -1,0 +1,26 @@
+def setup do
+  del clicked
+	let clicked : `minecraft.used:minecraft.carrot_on_a_stick`
+  
+  enum wand_type do
+    undead
+    fire
+  end
+end
+
+def shoot_particle_spell(type) do
+  if type == fire
+  end
+end
+
+def on_click do
+  shoot_particle_spell fire
+  
+  clicked = 0
+end
+
+def main do @a
+  if clicked > 0
+    on_click
+  end
+end
