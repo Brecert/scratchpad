@@ -1,3 +1,6 @@
+```py
+
+```
 | any
 ^ alias
 
@@ -35,4 +38,5 @@ Keyboard
 KeyboardEvent < Keyboard
 | key: string
 | keyCode: Int => { this.key to keyCode }
+
 
