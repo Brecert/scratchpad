@@ -24,7 +24,11 @@ syntax print puts
 
 // syntax for the language Function
 // redefining how the function is parsed locally
-syntax Function ['def' [name : Syntax::Name] [<?> '(' args : ListFrom<Syntax::Name, ','> ')' ] [block : Syntax::Block]]
+syntax Function ['def' [name : Syntax::Name] [<?> '(' args : ListFrom<Syntax::Name, ','> ')' ] [block : Syntax::Block] 'end']
+
+// redefining the syntax
+syntax Function ['function' [name : Syntax::Name] '(' args : ListFrom<Syntax::Name, ','> ')' '{' [block : Syntax::Block] '}' ]
+
 ```
 
 <br>
@@ -39,12 +43,31 @@ def join_args(args)
   '(' << args.join(',') << ')'
 end
 
+// Transpiler output for ruby
 output[:ruby] Function (name : Syntax::Name, args: List<Syntax::Name>, block: Syntax::Block)
   def ${name} ${ join_args unless args.empty? }
     ${block.expressions.join('\n')}
   end
 end
 ``` 
+
+If the syntax defined in Syntax is taken into account
+```
+function none { }
+
+function add(a, b) {
+  a + b
+}
+```
+and using the ruby output
+```
+def none
+end
+
+def add(a, b)
+  a + b
+end
+```
 
 <br>
 
@@ -68,3 +91,4 @@ Current problems that need solving.
     * How would languages with special types or features work?
     * This is important because macros may need to support these types or features.
 6. How will whitespace be handled for a whitespace sensitive syntax.
+7. How output catagories should work
