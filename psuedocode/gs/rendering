@@ -1,0 +1,10 @@
+Shape
+| pos: Vec2
+| scale: number
+| rotation: number
+| draw (): self => { return self.preDraw().drawLogic().postDraw() }
+| abstract preDraw (): self
+| abstract drawLogic(): self
+| abstract postDraw (): self
+
+Circle < Shape
