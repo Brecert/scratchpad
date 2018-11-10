@@ -29,6 +29,8 @@ add 1 plus 2
 build a "language"
 
 ```cr
+include Literal, Syntax
+
 macro [ 'function' $identifier [<?> '(' *args ')' ] '{' &block '}' ] 
       (identifier: Word, args: List(','), block: Block(Expression))
       
