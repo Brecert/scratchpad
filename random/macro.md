@@ -69,3 +69,44 @@ becomes
 def empty
 end
 ```
+
+make a transpiler
+
+```
+syntax macro Block [ linebreak &statements 'end'  ] (block: Literal::Block)
+  yield statements as statements
+end
+
+// uses alternate syntax for args
+// this keeps it more readable (sometimes?)
+macro [ 'def' $name '(' *args ')' $Block ](
+      , name: Syntax::Word
+      , args: Syntax::ListOf<Word, ','>
+      , block: Block
+      )
+      
+  function {{ name }}({{ args.join(',') }}) {
+    {{ block.statements.join('\n') }}
+  }
+  
+end
+```
+
+now
+
+```
+def hello
+  console.log("hello")
+end
+```
+
+becomes
+
+```
+function hello() {
+  console.log("hello")
+}
+```
+
+
+
