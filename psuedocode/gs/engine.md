@@ -1,5 +1,3 @@
-```py
-
 ```
 | any
 ^ alias
