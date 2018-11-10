@@ -26,7 +26,9 @@ syntax print puts
 // redefining how the function is parsed locally
 syntax Function ['def' [name : Syntax::Name] [<?> '(' args : ListFrom<Syntax::Name, ','> ')' ] [block : Syntax::Block]]
 ```
+
 <br>
+
 ### Output
 
 Outputs are similar to a normal `return` in many languages, however instead this can return to a catagory.
