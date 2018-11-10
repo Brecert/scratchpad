@@ -28,7 +28,7 @@ add 1 plus 2
 
 build a "language"
 
-```
+```cr
 macro [ 'function' $identifier [<?> '(' *args ')' ] '{' &block '}' ] 
       (identifier: Word, args: List(','), block: Block(Expression))
       
@@ -37,23 +37,33 @@ macro [ 'function' $identifier [<?> '(' *args ')' ] '{' &block '}' ]
   end
   
 end
+```
 
+lets you write
+
+```js
 function print(name, thing) {
   puts hi
 }
-/* becomes */
-/*
-  def print(name, thing)
-    puts hi
-  end
-*/
+```
 
-/* and */
+which becomes
+
+```rb
+def print(name, thing)
+  puts hi
+end
+```
+
+and
+
+```js
 function empty { }
+```
 
-/* becomes */
-/*
-  def empty
-  end
-*/
+becomes
+
+```cr
+def empty
+end
 ```
