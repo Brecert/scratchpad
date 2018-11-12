@@ -2,42 +2,46 @@
 ```
 // Assuming Classes don't already exist and we are currently using a js like prototype language
 // Assuming we are using a Crystal like syntax
-syntax Class [ 'class' [name : Syntax::Identifier] [block : Syntax::Block] ]
+module Classes
+  syntax Class [ 'class' [name : Syntax::Identifier] [block : Syntax::Block] ]
 
-output Class do |name, block|
-  ${name} = {${{
-    block.expressions.each do |exp|
-      if(exp =: Syntax::Def)
-        // Support all types of it, why not?
-        if(exp.name =: "__init__" | "constructor" | "initialize")
-          out = block.expressions.pop(exp)
-          out.name = ""
-          return out
+  output Class do |name, block|
+    ${name} = {${{
+      block.expressions.each do |exp|
+        if(exp =: Syntax::Def)
+          // Support all types of it, why not?
+          if(exp.name =: "__init__" | "constructor" | "initialize")
+            out = block.expressions.pop(exp)
+            out.name = ""
+            return out
+          end
         end
       end
-    end
-  }}$}
-  ${{
-    block.expressions.each do |exp|
-      if(exp =: Syntax::Def)
-        proto = new Syntax::Call(name, ["prototype", exp.name])
-        func = new Syntax::Def("", exp.args, exp.body)
-        assignment = new Syntax::Assign(proto, func)
-        resolve assignment
-      else
-        if(exp =: [<&type> .name | .value]) do |type|
-          proto = new Syntax::Call(name, ["prototype", exp<type>])
-          assign = new Syntax::Assign(proto, type)
+    }}$}
+    ${{
+      block.expressions.each do |exp|
+        if(exp =: Syntax::Def)
+          proto = new Syntax::Call(name, ["prototype", exp.name])
+          func = new Syntax::Def("", exp.args, exp.body)
+          assignment = new Syntax::Assign(proto, func)
+          resolve assignment
+        else
+          if(exp =: [<&type> .name | .value]) do |type|
+            proto = new Syntax::Call(name, ["prototype", exp<type>])
+            assign = new Syntax::Assign(proto, type)
+          end
         end
       end
-    end
-  }}$
+    }}$
+  end
 end
 ```
 
 would work as
 
 ```
+include syntax of Classes
+
 class Math {
   PI = 3.164
   
@@ -81,4 +85,21 @@ and using the math
 ```
 Math 1 + 1 // => 2
 Math 3 / 3 // => 1
+```
+
+# Basic Example
+assuming currently there is only a polish notation of operations
+```
+module Math
+  syntax add [ a '+' b ]
+  output add do |a, b|
+    resolve add(a, b)
+  end
+end
+
+Math 1 + 2 # => 3
+
+include * of Math
+
+2 + 2 # => 4
 ```
