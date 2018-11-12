@@ -1,3 +1,37 @@
+# Misc
+```
+module std
+  module Arithmetic
+    def add(a: Number, b: Number): Number
+      mt`${a} + ${b}`
+    end
+    
+    def sub(a: Number, b: Number): Number
+      mt`${a} - ${b}`
+    end
+    
+    def mult(a: Number, b: Number): Number
+      mt`${a} * ${b}`
+    end
+    
+    def div(a: Number, b: Number): Number
+      mt`${a} / ${b}`
+    end
+  
+    private opTable = table {
+      "+": <add.name>
+      "-": <sub.name>
+      "*": <mult.name>
+      "/": <div.name>
+    }
+    
+    syntax Operation [ a <opTable.left> b ]
+  end
+end
+
+```
+
+
 # Dirty Class Example
 ```
 // Assuming Classes don't already exist and we are currently using a js like prototype language
