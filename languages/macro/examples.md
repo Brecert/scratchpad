@@ -19,10 +19,10 @@ module std
     end
   
     private opTable = table {
-      "+": <add.name>
-      "-": <sub.name>
-      "*": <mult.name>
-      "/": <div.name>
+      "+": add
+      "-": sub
+      "*": mult
+      "/": div
     }
     
     syntax Operation [ a <opTable.left> b ]
