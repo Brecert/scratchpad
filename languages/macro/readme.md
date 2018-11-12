@@ -92,3 +92,6 @@ Current problems that need solving.
     * This is important because macros may need to support these types or features.
 6. How will whitespace be handled for a whitespace sensitive syntax.
 7. How output catagories should work
+8. How are root syntax definitions known and not changed for other parsers?
+    * Do parsers need to be loaded in a certain order?
+    * Does each parser need to manually specify the syntax rules to override any preexisting ones?
