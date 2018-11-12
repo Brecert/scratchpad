@@ -26,6 +26,9 @@ module std
     }
     
     syntax Operation [ a <opTable.left> b ]
+    output Operation do |a, op, b|
+      <opTable[<op>]>(a, b)
+    end
   end
 end
 
