@@ -140,3 +140,21 @@ include * of Math
 
 2 + 2 # => 4
 ```
+
+```
+module ArnoldC
+  syntax Def [ "IT'S SHOWTIME" ]
+  syntax print [ "TALK TO THE HAND" {string : Syntax::String}]
+  syntax Close [ "YOU HAVE BEEN TERMINATED" ]
+  
+  output print do |string|
+    `print("#{string.value}")`
+  end
+end
+
+include * of ArnoldC
+
+IT'S SHOWTIME
+TALK TO THE HAND "Hello World!"
+YOU HAVE BEEN TERMINATED
+```
