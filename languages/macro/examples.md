@@ -1,3 +1,31 @@
+### Terminology
+
+**Defs**
+
+Defs define methods like in a language like Ruby.
+It's good for re-useable logic that doesn't belong in a one off syntax, as syntax outputs are usually wrappers around a method.
+
+<br>
+
+**Macros**
+
+Macros are like Def but rather they inset theirself into the code beforehand, this may be good for one off situations when a syntax doesn't make sense.
+
+<br>
+
+**Syntax** 
+
+Syntaxs are the key part of this language, they define syntax rules about how a situation should be parsed.
+
+<br>
+
+**Outputs**
+
+Outputs complement syntaxs, they provide the output while the syntax provides the input.
+It's seperates to allow for syntax and output redefinition easily.
+
+<br>
+
 # Features explained
 ### Module
 
@@ -41,28 +69,6 @@ import * of TestModule
 -- Importing Values From Module
 import { hi } from TestModule
 ```
-
-### Terminology
-
-**Defs**
-
-Defs define methods like in a language like Ruby.
-It's good for re-useable logic that doesn't belong in a one off syntax, as syntax outputs are usually wrappers around a method.
-
-
-**Macros**
-
-Macros are like Def but rather they inset theirself into the code beforehand, this may be good for one off situations when a syntax doesn't make sense.
-
-
-**Syntax** 
-
-Syntaxs are the key part of this language, they define syntax rules about how a situation should be parsed.
-
-**Outputs**
-
-Outputs complement syntaxs, they provide the output while the syntax provides the input.
-It's seperates to allow for syntax and output redefinition easily.
 
 # Misc
 ```
