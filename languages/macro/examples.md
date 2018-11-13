@@ -1,3 +1,69 @@
+# Features explained
+### Module
+
+modules are nearly identical to Ruby/Crystal, 
+however, you can import from them in a similar nature to Javascript.
+
+There are two types of import syntax
+```import {type} of {module}```
+and
+```import {values} from {module}```
+
+Of imports import a specific type from the module.
+So importing only the syntax of a module is easy.
+
+The from import is nearly identical to a javascript import.
+```
+-- Module Syntax
+module TestModule
+  syntax test [ "test" ]
+  
+  output test do |_|
+    `print("test")`
+  end
+  
+  def hi
+    print("hi")
+  end
+  
+  macro bob
+    print("bob")
+  end
+end
+
+-- Importing Various Types
+import syntax of TestModule
+import output of TestModule
+import def of TestModule
+import macro of TestModule
+import * of TestModule 
+
+-- Importing Values From Module
+import { hi } from TestModule
+```
+
+### Terminology
+
+**Defs**
+
+Defs define methods like in a language like Ruby.
+It's good for re-useable logic that doesn't belong in a one off syntax, as syntax outputs are usually wrappers around a method.
+
+
+**Macros**
+
+Macros are like Def but rather they inset theirself into the code beforehand, this may be good for one off situations when a syntax doesn't make sense.
+
+
+**Syntax** 
+
+Syntaxs are the key part of this language, they define syntax rules about how a situation should be parsed.
+
+**Outputs**
+
+Outputs complement syntaxs, they provide the output while the syntax provides the input.
+It's seperates to allow for syntax and output redefinition easily.
+
 # Misc
 ```
 module std
