@@ -27,6 +27,51 @@ It's seperates to allow for syntax and output redefinition easily.
 <br>
 
 # Features explained
+
+### Syntax
+```
+-- [ to begin
+-- { to start a capture
+-- a is the name of the capture
+-- : Number is the type that the capture allows
+-- '+' checks for the + in `a + b`
+syntax add [{a : Number} '+' {b : Number}]
+```
+
+Syntax has two main parts.
+
+The name, and the actual definition
+
+The name is how it's internally reperesented for use with output and other things.
+
+While you can set it other ways, if the name is capitalized or not determines how it's parsed.
+
+lowercase means it's lexical sensitive, while uppercase means that it's syntaxical
+
+when you define a syntax it doesn't overwrite or conflict with any macros or defs.
+
+### Output
+```
+-- do starts the block
+-- |a, b| using named captures in the block
+-- in the block we use the method `add(a: Number, b: Number)` from the stdlib
+output add do |a, b|
+  add(a, b)
+end
+
+-- output[:rpn] creating/using channel rpn (reverse polish notation)
+-- resolve queues it for output and then outputs the raw result
+-- `` keeps the result raw by making it a raw literal
+-- while this channel has no effect on actual code, it can be used for transpilation
+output[:rpn] add do |a, b|
+  resolve `${a} ${b} +`
+end
+```
+
+Output 
+
+
+
 ### Module
 
 modules are nearly identical to Ruby/Crystal, 
