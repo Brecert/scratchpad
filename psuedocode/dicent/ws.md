@@ -2,7 +2,7 @@
 
 to keep data usage as low as possible
 all data names will be kept as short as possbile
-```
+```js
 // Error
 // Used for connection errors
 // If 0 then no error
@@ -21,9 +21,8 @@ q: 2
 d?: { message: "Hello World!", timestamp: 121312 }
 ```
 
-Types
-```
-
+Data Types
+```stylus
 Message {
   // a message
   message: string,
