@@ -37,6 +37,11 @@ Message {
   // a unix timestamp
   timestamp: uint
 }
+
+MessageResponse {
+  // unique identifier of the message recieved
+  id: uint
+}
 ```
 
 Query Codes
