@@ -25,7 +25,7 @@ Data Types
 ```stylus
 Message {
   // a message
-  message: string,
+  message: string
   
   // a unix timestamp
   timestamp: int
