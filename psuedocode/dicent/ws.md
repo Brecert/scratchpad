@@ -28,8 +28,14 @@ Message {
   // a message
   message: string
   
+  // A unique identifier, can be any int
+  // The identifier is only kept for 15 seconds
+  // That is the alotted time for a message to send before failing
+  // The chances of overriding someone elses identifier is rare
+  unique: uint
+  
   // a unix timestamp
-  timestamp: int
+  timestamp: uint
 }
 ```
 
