@@ -3,12 +3,22 @@
 to keep data usage as low as possible
 all data names will be kept as short as possbile
 ```
-|: Version
+// Error
+// Used for connection errors
+// If 0 then no error
+e: 0,
+
+// Version
+// The version of the protocol
 v: 0,
 
-|: Query
-|: The code (or string) for what query is performed
+// Query
+// The code (or string) for what query is performed
 q: 0
+
+// Data
+// The data sent, only used for some things, otherwise does not exist
+d?
 ```
 
 Query Codes
