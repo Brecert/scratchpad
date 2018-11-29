@@ -10,6 +10,7 @@ e: 0,
 
 // Version
 // The version of the protocol
+// If 0 then assume latest version (not recommended)
 v: 1,
 
 // Query
