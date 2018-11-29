@@ -32,10 +32,11 @@ Message {
   // The identifier is only kept for 15 seconds
   // That is the alotted time for a message to send before failing
   // The chances of overriding someone elses identifier is rare
-  unique: uint
+  // anything within 16,777,216
+  unique: uint8
   
   // a unix timestamp
-  timestamp: uint
+  timestamp: uint16
 }
 ```
 
