@@ -18,7 +18,19 @@ q: 2
 
 // Data
 // The data sent, only used for some things, otherwise does not exist
-d?: "Hello World!"
+d?: { message: "Hello World!", timestamp: 121312 }
+```
+
+Types
+```
+
+Message {
+  // a message
+  message: string,
+  
+  // a unix timestamp
+  timestamp: int
+}
 ```
 
 Query Codes
