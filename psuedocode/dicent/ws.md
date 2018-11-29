@@ -12,7 +12,7 @@ q: 0
 
 Query Codes
 
-> 0. Initial query sent when connecting  (out)
-> 0. Query response after connecting (in)
-> 1. Recieved a resonse for any message (in and out)
-> 2. A Message (in and out)
+> 0 Initial query sent when connecting  (out)
+> 0 Query response after connecting (in)
+> 1 Recieved a resonse for any message (in and out)
+> 2 A Message (in and out)
