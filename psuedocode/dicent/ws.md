@@ -19,7 +19,7 @@ q: 2
 
 // Data
 // The data sent, only used for some things, otherwise does not exist
-d?: { message: "Hello World!", timestamp: 121312 }
+d?: { message: "Hello World!", timestamp: 1543469371 }
 ```
 
 Data Types
