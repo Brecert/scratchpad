@@ -10,15 +10,15 @@ e: 0,
 
 // Version
 // The version of the protocol
-v: 0,
+v: 1,
 
 // Query
 // The code (or string) for what query is performed
-q: 0
+q: 2
 
 // Data
 // The data sent, only used for some things, otherwise does not exist
-d?
+d?: "Hello World!"
 ```
 
 Query Codes
