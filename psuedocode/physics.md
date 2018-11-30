@@ -1,3 +1,4 @@
+```
 » Vec2D
   | x » Float32
   | x » Float32
@@ -7,6 +8,6 @@
   | damagingStageCollision « ( damageType » DamageType, collisionData « {normal: normal, angular: angular, corner: corner}) »
   » 
   | 
+```   
     
-    
-     
+ 
