@@ -1,5 +1,5 @@
 connection start
-```
+```sh
 client
 get 'example.com/guild_name/' with 
     query: generate_connection
