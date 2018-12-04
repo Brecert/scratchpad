@@ -20,7 +20,7 @@ get '/:guild/'
       ask to generate token if token generation is enabled
       
       if verified then
-        -- return a temporary ws key to the client --
+        # return a temporary ws key to the client #
         send { query: temporary_key key: 'secret-temporary-key' }
         
         
