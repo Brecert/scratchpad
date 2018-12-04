@@ -26,7 +26,7 @@ get '/:guild/'
         
 client
 when the client recieves the key then
-    wss 'example.com/guild_name/ with
+    wss 'example.com/guild_name/' with
       query: initial_connection
       token: 'secret-temporary-key'
       id: 132
