@@ -1,3 +1,4 @@
+```
 views:
   channel:
     sidebar
@@ -9,3 +10,4 @@ views:
         message
           {{ username }}
           {{ message }}
+```
