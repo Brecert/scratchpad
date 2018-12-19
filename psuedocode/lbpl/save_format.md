@@ -1,15 +1,31 @@
 Logic Save
 ```yaml
 _not_:
+	# ID of the named chip
   id: 0
-  is: not
-  out:
-    - _not_
-    - _print_
+  # The type of the named chip
+  type: not
+  # The connections of the named chip
+  connections:
+  	# Named value for sake of readability rather then an unnamed array
+  	_not_:
+    	id: 0
+    	# Which output is selected to go out of
+      output: 0
+      # Which input is selected to go into
+      input: 0
+    # If the id is not specified then assume
+    # that it continues from the last number
+    # +1
+    _print_:
+      output: 0
+      input: 0
     
 _print_:
   id: 1
-  is: print("Hello")
+  type: print
+  properties:
+  	value: Hello World
 ```
 
 Display Save
