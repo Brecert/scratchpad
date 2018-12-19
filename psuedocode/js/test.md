@@ -1,5 +1,4 @@
-```
-
+```js
 BaseCanvasObject {
   pos
   scale
@@ -8,7 +7,7 @@ BaseCanvasObject {
   events {
     clicked
     hover
-    (basically any dom events)
+    // (basically any dom events)
   }
   
 }
