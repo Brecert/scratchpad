@@ -1,4 +1,4 @@
-Logic Portion
+Logic Save
 ```yaml
 _not_:
   id: 0
@@ -12,7 +12,7 @@ _print_:
   is: print("Hello")
 ```
 
-Display Portion
+Display Save
 ```yaml
 _not_:
   id: 0
