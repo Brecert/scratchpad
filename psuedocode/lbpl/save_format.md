@@ -10,7 +10,7 @@ _not_:
     # Named value for sake of readability rather then an unnamed array
   	_not_:
     	id: 0
-    	# Which output is selected to go out of
+      # Which output is selected to go out of
       output: 0
       # Which input is selected to go into
       input: 0
