@@ -1,13 +1,13 @@
 Logic Save
 ```yaml
 _not_:
-	# ID of the named chip
+  # ID of the named chip
   id: 0
   # The type of the named chip
   type: not
   # The connections of the named chip
   connections:
-  	# Named value for sake of readability rather then an unnamed array
+    # Named value for sake of readability rather then an unnamed array
   	_not_:
     	id: 0
     	# Which output is selected to go out of
