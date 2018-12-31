@@ -56,7 +56,7 @@ Knowing these, the eventual goals are to
   * To make the language extendable
     * Writing logic should be very simple, for example, a not gate 
       ```js
-      this.output[0] = (!this.input[0].value);
+      this.output[0] = !this.input[0].value;
       this.emit(0) 
       ```
 
