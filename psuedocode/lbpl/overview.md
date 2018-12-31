@@ -53,10 +53,10 @@ Knowing these, the eventual goals are to
   * the chosen language needs to be embeddable and extendable.
   * some good languages are lua, javascript, rust, c
   * due to ease of prototyping with it, javascript will create the initial implementation of the language and editor
-  * To make the language extendable
-    * Writing logic should be very simple, for example, a not gate 
-      ```js
-      this.output[0] = !this.input[0].value;
-      this.emit(0) 
-      ```
+  * To make the language extendable writing logic should be very simple, for example, a not gate 
+    ```js
+    this.output[0] = !this.input[0].value;
+    this.emit(0) 
+    ```
+  * To make the editor extendable, ???
 
