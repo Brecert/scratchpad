@@ -90,9 +90,11 @@ Notes
     global.timer.ticker = Ticker.new(1000) // 1000 ticks per second (1 tick per millesecond)
    }
    
+   // on tick from the ticker
    global.timer.ticker.onTick = (tick) => {
     this.properties.current_time += 1
      
+    // keep the timer within range
     if(this.properties.current_time > this.properties.time) {
      this.properties.current_time = this.properties.time
     }
