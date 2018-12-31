@@ -66,16 +66,26 @@ Notes
 - All logic should be handled withing the chip itself and be self-contained
 - However, to keep things a little bit simple a stdlib for creating chips should be provided
 - along with this part of the library should be for handing non-event based chips, for example a timer.
+
   while a timer may work with sleep and then emitting, it's extremely limited.
+  
   for example, you can't emit the current value of the timer (1s/10s = 10%)
+  
   not only that but timed chips may break easily when compared to logic only chips.
+  
   Therefor a global tick process should be created for specialty chips.
-  With a global tick rate controlling any other chips that use a 
+  
+  With a global tick rate controlling any other chips that are specialty
+  
   For example, the timer may need to have a more specific tick rate of 1 tick per millesecond to keep things accurate
+  
   The global tick rate is just a percentage, so 100% would still be 1 tick per millesecond and 200% being 2 ticks per millesecond
+  
   While this is prone to breaking some more sensitive chips, overall it avoids more complications with users creating their own chips without a stdlib and becoming fragmented and hard to control.
+  
   Furthurmore, if the ticker implementation is created correctly, optimization with ticks can be achieved, only ticking when nessisary for similar chips (multiple timer chips do not all have seperate tickers, but rather one unified "global" ticker)
   Unfortunantly it may be hard to create this, but it's possible
+  
 - to create a chip like a timer (it counts up and if selected, emits the current value) 
   ```js
   constructor() {
