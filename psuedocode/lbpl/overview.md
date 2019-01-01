@@ -86,7 +86,7 @@ Notes
   Furthurmore, if the ticker implementation is created correctly, optimization with ticks can be achieved, only ticking when nessisary for similar chips (multiple timer chips do not all have seperate tickers, but rather one unified "global" ticker)
   Unfortunantly it may be hard to create this, but it's possible
   
-- to create a chip like a timer (it counts up and if selected, emits the current value) 
+- to create a chip like a timer (it counts up and emits the current value) 
   ```js
   constructor() {
    super()
@@ -115,3 +115,15 @@ Notes
    }
   }
   ```
+
+### Visual Design and Aspects
+When rendered chips will have a few parts to it.
+1. The inputs and outputs will need to be rendered. By default they should start at the center of the chip and for each added one be centered (by both)
+  - However, due to some chips needed a more complex imput output design (for simplicity or ease of use) the inputs and output positions may need to be manually change to an x/y coord relative to the chip.
+  
+2. The chip itself. By defaults chips will be a square or a rectangle. Chips will typically have a few parts to it.
+   - The border and the icon
+   - The border is purely aesthetic
+   - the icon is used to display what the chip is, for example. a not chip might have a not gate symbol as the icon
+   - however for more advanced/complicated chips, they will have a limited rendering canvas as the icon, for example a timer that needs to display how far it is
+   
