@@ -119,7 +119,7 @@ Notes
 ### Visual Design and Aspects
 When rendered chips will have a few parts to it.
 1. The inputs and outputs will need to be rendered. By default they should start at the center of the chip and for each added one be centered (by both)
-  - However, due to some chips needed a more complex imput output design (for simplicity or ease of use) the inputs and output positions may need to be manually change to an x/y coord relative to the chip.
+   - However, due to some chips needed a more complex imput output design (for simplicity or ease of use) the inputs and output positions may need to be manually change to an x/y coord relative to the chip.
   
 2. The chip itself. By defaults chips will be a square or a rectangle. Chips will typically have a few parts to it.
    - The border and the icon
