@@ -17,22 +17,22 @@ Google created a more general use alternative to Scratch named [Blocky](https://
 
 Both of these popular languages have Pros and Cons.
 
-Pros of luna-lang
+**Pros of Luna**
 - somewhat intuitive, it just takes time to learn the editor
-- if the editor worked correctly, it would be amazing
+- shows information in a very clear informative user friendly way
 
-Cons of luna-lang
+**Cons of Luna**
 - user experience is terrible, loading the editor takes forever, is buggy, and is extrememly slow
-- not extrememly beginner friendly, to both programmers and newbies. Both need to learn how the editor works and how the code works.
-- As I could barely run the editor, any further flaws haven't been found.
-- not embedable (both the editor, and the language (afaik))
+- not extrememly beginner friendly, to both programmers and newbies. Both need to learn how the editor works and how the code works
+- as the editor portion of the language would barely run further cons have not been found.
+- not embedable
 
-Pros of scratch / blocky
-- beginner friendly. While it may not be useful for writing actual code, it does a good job teaching it by keeping the visual elements simple.
-- it can easily be extended and embedded into websites (blocky)
+**Pros of Scratch**
+- keeping visual designs simple to keep it beginer friendly
+- it can easily be extended and embedded into websites using Blocky
 
-Flaws of scratch / blocky
-- not intuitive when writing actual code.
+**Cons of Scratch**
+- not intuitive when writing an actual codebase
 - does not scale
 - it's hard to tell what's happening at a glance
 
