@@ -1,6 +1,5 @@
 [//]: # (Title)
-LBPL : Logic Based Programming Language
----
+# LBPL : Logic Based Programming Language
 
 [//]: # (Overview)
 Create and use basic logic gates to visually to program and create large scale structures easily.
@@ -73,7 +72,7 @@ Knowing these, the eventual goals are to
   * To make the editor extendable, ???
 
 
-Notes
+## Notes
 - All updates will be handled through events
 - All logic should be handled withing the chip itself and be self-contained
 - However, to keep things a little bit simple a stdlib for creating chips should be provided
