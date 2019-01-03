@@ -2,9 +2,11 @@
 # LBPL : Logic Based Programming Language
 
 [//]: # (Overview)
+## Overview
 Create and use basic logic gates to visually to program and create large scale structures easily.
 
 [//]: # (Background)
+## Background
 There have been many visual languages created in the past few years.
 
 However many of them have been tied to a specific domain of interest.
@@ -35,6 +37,7 @@ Flaws of scratch / blocky
 - it's hard to tell what's happening at a glance
 
 [//]: # (Objectives)
+## Goals and Objectives
 Knowing these, the eventual goals are to
 - make the user expierence fast and friendly
 - make the user expierence beginner friendly, no forced keybind, no hidden data or things, however, data may need to be hidden to not overload the user
