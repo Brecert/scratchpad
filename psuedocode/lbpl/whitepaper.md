@@ -38,7 +38,7 @@ Both of these popular languages have Pros and Cons.
 
 [//]: # (Objectives)
 ## Goals and Objectives
-Knowing these, the eventual goals are to
+Knowing the Pros and Cons of some of the more popular languages, we can fix those by
 - make the user expierence fast and friendly
 - make the user expierence beginner friendly, no forced keybind, no hidden data or things, however, data may need to be hidden to not overload the user
 - what the logic is doing at a glance
