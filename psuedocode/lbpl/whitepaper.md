@@ -1,29 +1,41 @@
+[//]: # (Title)
 LBPL : Logic Based Programming Language
 ---
 
-Use logic gates to program.
-Similar to luna-lang or scratch, however with more focus on user friendlyness.
+[//]: # (Overview)
+Create and use basic logic gates to visually to program and create large scale structures easily.
 
-Flaws of luna-lang
+[//]: # (Background)
+There have been many visual languages created in the past few years.
+
+However many of them have been tied to a specific domain of interest.
+
+The most popular of these visual languages have been [Scratch](https://scratch.mit.edu/) a teaching tool for programming and [Luna](https://www.luna-lang.org/) a data processing and visualization language and ide.
+
+Google created a more general use alternative to Scratch named [Blocky](https://developers.google.com/blockly/), that has been considered while writing this.
+
+Both of these popular languages have Pros and Cons.
+
+Pros of luna-lang
+- somewhat intuitive, it just takes time to learn the editor
+- if the editor worked correctly, it would be amazing
+
+Cons of luna-lang
 - user experience is terrible, loading the editor takes forever, is buggy, and is extrememly slow
 - not extrememly beginner friendly, to both programmers and newbies. Both need to learn how the editor works and how the code works.
 - As I could barely run the editor, any further flaws haven't been found.
 - not embedable (both the editor, and the language (afaik))
 
-Pros of luna-lang
-- somewhat intuitive, it just takes time to learn the editor
-- if the editor worked correctly, it would be amazing
+Pros of scratch / blocky
+- beginner friendly. While it may not be useful for writing actual code, it does a good job teaching it by keeping the visual elements simple.
+- it can easily be extended and embedded into websites (blocky)
 
 Flaws of scratch / blocky
 - not intuitive when writing actual code.
 - does not scale
 - it's hard to tell what's happening at a glance
 
-Pros of scratch / blocky
-- beginner friendly. While it may not be useful for writing actual code, it does a good job teaching it by keeping the visual elements simple.
-- it can easily be extended and embedded into websites (blocky)
-
-
+[//]: # (Objectives)
 Knowing these, the eventual goals are to
 - make the user expierence fast and friendly
 - make the user expierence beginner friendly, no forced keybind, no hidden data or things, however, data may need to be hidden to not overload the user
