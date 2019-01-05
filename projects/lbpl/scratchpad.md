@@ -1,6 +1,5 @@
 
-# ~
-```
+```cr
 class LogicNode
   # Properties
   # Properties hold information that's meant to be editable or displayed
