@@ -32,7 +32,7 @@ The exact same could be achieved by having one keyboard display and one controll
 
 like so
 
-```
+```js
 capture { type: keyboard } ->
   space: emit { channel: "jump" }
   
