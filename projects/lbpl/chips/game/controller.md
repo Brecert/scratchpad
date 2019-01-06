@@ -33,10 +33,10 @@ The exact same could be achieved by having one keyboard display and one controll
 like so
 
 ```js
-capture { type: keyboard } ->
+controller { type: keyboard } ->
   space: emit { channel: "jump" }
   
-capture { type: gamepad } ->
+controller { type: gamepad } ->
   button_accept: emit { channel: "jump" }
 ```
 
