@@ -23,3 +23,9 @@ on jump ->
   acceleration += 1
 ```
 this would all be displayed with chips and gui of course.
+
+### Note
+
+while the map and tag display may be lower level, it would be considered "syntax sugar".
+
+The exact same could be achieved by having one keyboard display and one controller display, each input hooked up to an event_emitter
