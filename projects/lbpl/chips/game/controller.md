@@ -15,7 +15,7 @@ keyboard_w: move_forward
 gamepad_axis_y_positive: move_forward
 
 keyboard_space: jump
-gamepad_buttom_accept: jump
+gamepad_button_accept: jump
 ```
 then later with event capturers
 ```cr
@@ -29,3 +29,17 @@ this would all be displayed with chips and gui of course.
 while the map and tag display may be lower level, it would be considered "syntax sugar".
 
 The exact same could be achieved by having one keyboard display and one controller display, each input hooked up to an event_emitter
+
+like so
+
+```
+capture { type: keyboard } ->
+  space: emit { channel: "jump" }
+  
+capture { type: gamepad } ->
+  button_accept: emit { channel: "jump" }
+```
+
+
+
+
