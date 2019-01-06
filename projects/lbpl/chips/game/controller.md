@@ -18,7 +18,7 @@ keyboard_space: jump
 gamepad_buttom_accept: jump
 ```
 then later with event capturers
-```yaml
+```cr
 on jump ->
   acceleration += 1
 ```
