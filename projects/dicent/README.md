@@ -16,7 +16,7 @@ func main {
 
   send login "token" -> res {
     if res.logged_in == true {
-      @emit login
+      connected()
     }
   }
 
@@ -30,6 +30,28 @@ func main {
     form.on "submit" -> data {
       send message data
     }
+  }
+}
+```
+
+```js
+function main() {
+  const [ ping, login, messae ] = enum { PING, LOGIN, MESSAGE }
+  
+  send(login, "token", res => {
+    if(res.logged_in === true) {
+      connected()
+    }
+  })
+  
+  function connected() {
+    _temp = async () => {
+      setInterval(send(ping), 3000)
+    }
+    
+    form.on("submit", data => {
+      send(message, data)
+    })
   }
 }
 ```
