@@ -5,7 +5,7 @@ func main {
   const { ping, login, message } = enum { PING, LOGIN, MESSAGE }
 
   // scope
-  macro @(var) {
+  macro @(var: Macro.Property) {
     this.{{var}}
   }
 
@@ -16,18 +16,20 @@ func main {
 
   send login "token" -> res {
     if res.logged_in == true {
-      load_rest()
+      @emit login
     }
   }
 
-  async -> {
-    every 3s {
-      send ping
+  func connected {
+    async -> {
+      every 3s {
+        send ping
+      }
     }
-  }
 
-  form.on "submit" -> data {
-    send message data
+    form.on "submit" -> data {
+      send message data
+    }
   }
 }
 ```
