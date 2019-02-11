@@ -4,7 +4,7 @@
 const { ping, login, message } = enum { PING, LOGIN, MESSAGE }
 
 // scope
-macro prefix @(var) {
+macro @(var) {
   this.{{var}}
 }
 
