@@ -58,13 +58,13 @@ This is in no specific order other then what I remember or think of first.
     However, operator overloading doesn't work well in languages without type overloading
     It's something that's needed to keep compatability and clarity with other addition overloads
 3. Only while or until loops
-    ```js
+    ```cr
     let x = 0
     while(x < 3) {
       x += 1
     }
 
-    until(let x = 0 >= 3) {
+    until let x = 0 >= 3 {
       x += 1
     }
     ```
