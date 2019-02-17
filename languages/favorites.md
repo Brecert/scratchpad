@@ -90,3 +90,6 @@ This is in no specific order other then what I remember or think of first.
     like having the scope polluted with unchangable names (java can have problems with this)
     or having the entire module loaded all at once when it doesn't need to
     javascript provides a way of loading only needed things when properly programmed
+5. Namespaces and Modules
+    While the above shows you don't need them I still think they are a great idea and can be used for good
+    this is a strongly opinionated one with no real example
