@@ -104,3 +104,11 @@ This is in no specific order other then what I remember or think of first.
     // or written as
     object = {item = 1, item2 = {item3, item4}}
     ```
+7. OOP
+    I love oop inheritance and how easy it is to make changes to everything at once
+    I love the way it looks
+8. Functional
+    I don't entirely understand it to be completely honest
+    but I love pattern matching and a lot of features built into languages like elixir
+9. this list is getting lazy
+10. it's just a joke now
