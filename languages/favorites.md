@@ -122,26 +122,56 @@ This is in no specific order other then what I remember or think of first.
 13. A unified language
     This isn't nessisary for all languages because they all have a different goal
     however having a language that has a unified community and toolset is nice
-    Some exmaples of languages not having that would be
-    1. Python
-        Like seriously installing it isn't a total drag but getting pip to work can be a pain, updating is a pain and there isn't any official dependency management tool
+    
+    > Some exmaples of languages not having that would be
+
+    **Python**
         
-    2. Ruby
-        While it has an official dependency manager and other things, installing it is a drag and is confusing on systems like windows where it can feel fragmented and not first class
-        The standard library is a mess and confusing, the docs don't look very nice and it's confusing to navagate
-        not only that but the language in general feels lacking and second class
-        the "feel" of a language is important
-    Some examples of language that do have a unified community and toolset
-    1. Crystal
-        Installing it dead simple on most systems other then windows, which is not support as of now :(
-        However the standard library is well defined and solid
-        the documentation is clear and the provided tools that come with the compiler create a unified language
-        it has a very good starting guide and the overall feel of the language made me fall in love with it
-        please check out their [website](https://crystal-lang.org/) to see what I mean. The [website](https://crystal-lang.org/) expresses the language so well
-    Mixed
-    1. JavaScript
-        Everything is fragmented
-        and yet the language evolves fast enough now to continuously unify the community more and more each year
-        it's pretty incredble
-        not only that but having npm and yarn as the package managers (and making it so easy to find and add a package) is really smart
-        While other languages like rust and go have now adopted similar (and better) systems js really made it popular within the community
+    Installing it isn't a total drag but getting pip to work can be a pain, updating is a pain and there isn't any official dependency management tool
+    
+    **Ruby**
+    
+    While it has an official dependency manager and other things, installing it is a drag and is confusing on systems like windows where it can feel fragmented and not first class
+    The standard library is a mess and confusing, the docs don't look very nice and it's confusing to navagate
+    not only that but the language in general feels lacking and second class
+    the "feel" of a language is important
+    
+    > Some examples of language that do have a unified community and toolset
+    
+    **Crystal**
+    
+    Installing it dead simple on most systems other then windows, which is not support as of now :(
+    However the standard library is well defined and solid
+    the documentation is clear and the provided tools that come with the compiler create a unified language
+    it has a very good starting guide and the overall feel of the language made me fall in love with it
+    please check out their [website](https://crystal-lang.org/) to see what I mean. The [website](https://crystal-lang.org/) expresses the language so well
+    
+    **Rust**
+    
+    Even though it's really easy to install Crystal, rust is even easier
+    all you need to do is run their script and it installs everything you need
+    making it easy to update and do anything within the language
+    
+    > Mixed
+    
+    **JavaScript**
+    
+    Everything is fragmented
+    and yet the language evolves fast enough now to continuously unify the community more and more each year
+    it's pretty incredble
+    not only that but having npm and yarn as the package managers (and making it so easy to find and add a package) is really smart
+    While other languages like rust and go have now adopted similar (and better) systems js really made it popular within the community
+    Not only that but it has tools like babel and typescript that are absoutely incredible and well supported
+    somehow having everything be fragmented created tools that created a sense of unity
+14. Things I dislike
+    **C++ / C**
+    They aren't bad but because of age and other factors they can be a pain to get started with
+    the language specification is a deep confusing mess at times
+    they lack proper unified tooling and specifications until recently
+    even then tooling can be a problem
+    while languages have been made to replace them they are still important and hold good ideas with them
+15. No Null (when possible)
+    This mostly doesn't make sense in my head but languages like pony-lang have shown me it's more or less
+    possible with magic and math
+16. Effects (or something)
+    I really  
