@@ -71,3 +71,22 @@ This is in no specific order other then what I remember or think of first.
     Having multiple loops can make it hard to optimize or know what or when to follow good practice
     Having one makes this easier
     Having until loops can make code more readable while still being the same as a while loop
+4. The thing I forgot the name of but it's the import style of javascript and not the ruby module style
+    ```
+    import { pi as pinum } from 'module'
+    import thing from './file'
+
+    export * from 'module/file'
+
+    let pi = 3.14
+    export { pi }
+    // import { pi } from './this_file'
+
+    let uno = 1
+    export default uno
+    // import one from './this_file'
+    ```
+    While I like modules and other features from ruby, importing an entire package as module every time causes problems
+    like having the scope polluted with unchangable names (java can have problems with this)
+    or having the entire module loaded all at once when it doesn't need to
+    javascript provides a way of loading only needed things when properly programmed
