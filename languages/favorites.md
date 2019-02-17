@@ -39,3 +39,22 @@ This is in no specific order other then what I remember or think of first.
     Units provide a good way to create a universal number format
     I haven't seen any good examples of it in practice so I don't have much expierence with it
     It seems it may be hard to create a good implementation though
+2. Operator Overloading
+    ```
+    class Array {
+      def + (value: Array) {
+        return new [...this, ...value]
+      }
+    }
+
+    let a = [1, 2, 3]
+    let b = [4, 5, 6]
+
+    a + b
+    // [1, 2, 3, 4, 5, 6]
+    ```
+    Others may dislike this for being confusing or not clear, however readability can be better with it
+    An example would be to create an operation for adding arrays together
+    However, operator overloading doesn't work well in languages without type overloading
+    It's something that's needed to keep compatability and clarity with other addition overloads
+    
