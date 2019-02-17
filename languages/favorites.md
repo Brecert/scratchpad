@@ -40,7 +40,7 @@ This is in no specific order other then what I remember or think of first.
     I haven't seen any good examples of it in practice so I don't have much expierence with it
     It seems it may be hard to create a good implementation though
 2. Operator Overloading
-    ```
+    ```js
     class Array {
       def + (value: Array) {
         return new [...this, ...value]
@@ -57,4 +57,17 @@ This is in no specific order other then what I remember or think of first.
     An example would be to create an operation for adding arrays together
     However, operator overloading doesn't work well in languages without type overloading
     It's something that's needed to keep compatability and clarity with other addition overloads
-    
+3. Only while or until loops
+    ```js
+    let x = 0
+    while(x < 3) {
+      x += 1
+    }
+
+    until(let x = 0 >= 3) {
+      x += 1
+    }
+    ```
+    Having multiple loops can make it hard to optimize or know what or when to follow good practice
+    Having one makes this easier
+    Having until loops can make code more readable while still being the same as a while loop
