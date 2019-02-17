@@ -93,3 +93,14 @@ This is in no specific order other then what I remember or think of first.
 5. Namespaces and Modules
     While the above shows you don't need them I still think they are a great idea and can be used for good
     this is a strongly opinionated one with no real example
+6. Objects
+    ```js
+    object = {}
+    object.item = 1
+    object.item2 = {item3, item4}
+    object.item
+    // 1
+    
+    // or written as
+    object = {item = 1, item2 = {item3, item4}}
+    ```
