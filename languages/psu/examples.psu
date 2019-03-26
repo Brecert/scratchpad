@@ -1,0 +1,30 @@
+// comment
+/* multiline comment */
+
+// assignment
+x := 2
+y: u32 := 5
+
+// operator overloading
+// method overloading
+// no assignment "destructuring"
+// advance types
+// advanced macro
+type Point<T = f64>(x: T, y: T) struct {
+
+  macro @[Symbol("op")](op: OperatorValue) {
+    def @[Symbol("{{op}}")](p: Point): void {
+      self.{ x, y } += p.{ x, y }
+    }
+  }
+
+}
+
+pt := Point(2, 1)
+// => { x: 2, y: 1 }
+
+pt += pt
+// => { x: 4, y: 2}
+
+pt *= pt
+// => { x: 16, y: 4}
