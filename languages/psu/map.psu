@@ -1,0 +1,12 @@
+type Math {
+  PI u32 := 3.14
+  // when compiles becomes PI
+  alias π PI
+  
+  def abs(x: num) => { 
+    case x {
+      when < x:
+    }
+  }
+  def sum(a: int, b: int) => a + b
+}
